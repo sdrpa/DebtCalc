@@ -4,31 +4,45 @@
 
 @implementation Calculator
 
-- (id)init{
-   self = [super init];
-   if (self) {
++ (NSSet<NSString *> *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
+   NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
+   if ([key isEqualToString:@"monthlyPayment"] ||
+       [key isEqualToString:@"paymentPlan"] ||
+       [key isEqualToString:@"totalInterest"])
+   {
+      NSArray *affectingKeys = @[@"amount", @"annualInterestRate", @"periodInMonths", @"startDate"];
+      keyPaths = [keyPaths setByAddingObjectsFromArray:affectingKeys];
    }
-   return self;
+   return keyPaths;
 }
 
-- (double)montlyPayment {
-   return [self calculateMontlyPaymentForAmount:self.amount annualInterestRate:self.annualInterestRate periodInMonths:self.periodInMonths];
+- (double)monthlyPayment {
+   double payment = [self calculateMonthlyPaymentForAmount:self.amount
+                                        annualInterestRate:self.annualInterestRate
+                                            periodInMonths:self.periodInMonths];
+   return (self.periodInMonths == 0) ? 0 : payment;
 }
 
-- (double)calculateMontlyPaymentForAmount:(double)amount annualInterestRate:(double)annualRate periodInMonths:(int)period {
-   double rate =  (annualRate / 12.0) / 100.0;
-   double payment = (amount * rate) / (1.0 - pow(1.0 + rate, -period));
+- (double)calculateMonthlyPaymentForAmount:(double)amount
+                        annualInterestRate:(double)annualRate
+                            periodInMonths:(NSUInteger)period {
+   if (annualRate == 0) {
+      return amount/period;
+   }
+   double rate = (annualRate / 12.0) / 100.0;
+   double payment = (amount * rate) / (1.0 - pow(1.0 + rate, -(double)period));
    return payment;
 }
 
+
 - (NSArray *)paymentPlan {
-   int monthsRemaining = self.periodInMonths;
-   double monthlyPayment = [self calculateMontlyPaymentForAmount:self.amount annualInterestRate:self.annualInterestRate periodInMonths:monthsRemaining];
+   NSUInteger monthsRemaining = self.periodInMonths;
+   double monthlyPayment = [self calculateMonthlyPaymentForAmount:self.amount annualInterestRate:self.annualInterestRate periodInMonths:monthsRemaining];
    double rest = self.amount;
-   double rate =  (self.annualInterestRate / 12.0) / 100.0;
+   double rate = (self.annualInterestRate / 12.0) / 100.0;
    
    double lastRest = self.amount;
-   int c = 1;
+   NSUInteger c = 1;
    NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithCapacity:monthsRemaining];
    
    NSDate *date = (self.startDate) ? : [NSDate new];
@@ -60,20 +74,41 @@
    return [NSArray arrayWithArray:mutableArray];
 }
 
-- (double)interestAmountFromMonth:(int)startMonth untillMonth:(int)endMonth {
+- (double)totalInterest {
+   return [self interestAmountFromMonth:0 untillMonth:self.periodInMonths];
+}
+
+- (double)interestAmountFromMonth:(NSUInteger)startMonth untillMonth:(NSUInteger)endMonth {
    if (endMonth < startMonth) {
       NSAssert(false, nil);
    }
-   NSArray *paymentPlan = [self paymentPlan];
+   NSArray *paymentPlan = self.paymentPlan;
+   if ([paymentPlan count] == 0) {
+      return 0;
+   }
    double total = 0;
-   for (int i = startMonth; i < endMonth; i++) {
+   for (NSUInteger i = startMonth; i <= endMonth; i++) {
+      if (i == [paymentPlan count]) {
+         break;
+      }
       Payment *payment = [paymentPlan objectAtIndex:i];
       total += [payment interest];
    }
    if (endMonth == startMonth) {
-      return [[paymentPlan objectAtIndex:startMonth] interest];
+      total = [[paymentPlan objectAtIndex:startMonth] interest];
    }
    return total;
+}
+
+- (void)setNilValueForKey:(NSString *)key {
+   if ([key isEqualToString:@"amount"] ||
+       [key isEqualToString:@"annualInterestRate"] ||
+       [key isEqualToString:@"periodInMonths"])
+   {
+      [self setValue:@(0) forKey:key];
+      return;
+   }
+   [super setNilValueForKey:key];
 }
 
 @end

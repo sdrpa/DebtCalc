@@ -5,13 +5,16 @@
 
 @property (assign) double amount;
 @property (assign) double annualInterestRate;
-@property (assign) int periodInMonths;
-@property (assign, readonly) double monthlyPayment;
+@property (assign) NSUInteger periodInMonths;
 @property (strong) NSDate *startDate;
 
-- (double)montlyPayment;
-- (double)calculateMontlyPaymentForAmount:(double)amount annualInterestRate:(double)annualRate periodInMonths:(int)period;
-- (NSArray *)paymentPlan;
-- (double)interestAmountFromMonth:(int)startMonth untillMonth:(int)endMonth;
+@property (assign, readonly) double monthlyPayment;
+@property (assign, readonly) double totalInterest;
+@property (strong, readonly) NSArray *paymentPlan;
+
+- (double)calculateMonthlyPaymentForAmount:(double)amount
+                        annualInterestRate:(double)annualRate
+                            periodInMonths:(NSUInteger)period;
+- (double)interestAmountFromMonth:(NSUInteger)startMonth untillMonth:(NSUInteger)endMonth;
 
 @end

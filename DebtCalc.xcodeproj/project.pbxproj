@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		B14E1C7A192C75570020D908 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14E1C78192C75570020D908 /* WindowController.m */; };
 		B14E1C7B192C75570020D908 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = B14E1C79192C75570020D908 /* Window.xib */; };
-		B14E1C7D192CA1920020D908 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = B14E1C7C192CA1920020D908 /* icon.iconset */; };
+		B16613D31E590BC90041F8B4 /* DebtCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B16613D21E590BC90041F8B4 /* DebtCalcTests.m */; };
+		B16613DC1E590CB40041F8B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16613DB1E590CB40041F8B4 /* Images.xcassets */; };
 		B1B19EAB17B3B0A9004409E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B19EAA17B3B0A9004409E9 /* Cocoa.framework */; };
 		B1B19EB517B3B0A9004409E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B19EB317B3B0A9004409E9 /* InfoPlist.strings */; };
 		B1B19EB717B3B0A9004409E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B19EB617B3B0A9004409E9 /* main.m */; };
@@ -17,26 +18,30 @@
 		B1B19EBE17B3B0A9004409E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B19EBD17B3B0A9004409E9 /* AppDelegate.m */; };
 		B1B19EC117B3B0A9004409E9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B19EBF17B3B0A9004409E9 /* MainMenu.xib */; };
 		B1B19EC917B3B0C3004409E9 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B19EC817B3B0C3004409E9 /* Calculator.m */; };
-		B1B19ED117B3B291004409E9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B19ED017B3B291004409E9 /* SenTestingKit.framework */; };
-		B1B19ED217B3B291004409E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B19EAA17B3B0A9004409E9 /* Cocoa.framework */; };
-		B1B19ED817B3B291004409E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B19ED617B3B291004409E9 /* InfoPlist.strings */; };
-		B1B19EDB17B3B291004409E9 /* CalculatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B19EDA17B3B291004409E9 /* CalculatorTest.m */; };
-		B1B19EE017B3B2C6004409E9 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B19EC817B3B0C3004409E9 /* Calculator.m */; };
 		B1B19EE417B420A0004409E9 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B19EE317B420A0004409E9 /* Payment.m */; };
-		B1B19EE517B42467004409E9 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B19EE317B420A0004409E9 /* Payment.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B16613D51E590BC90041F8B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1B19E9F17B3B0A9004409E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1B19EA617B3B0A9004409E9;
+			remoteInfo = DebtCalc;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B14E1C77192C75570020D908 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		B14E1C78192C75570020D908 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		B14E1C79192C75570020D908 /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
-		B14E1C7C192CA1920020D908 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = "<group>"; };
 		B14E1C7E192CA33A0020D908 /* DebtCalc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DebtCalc.entitlements; sourceTree = "<group>"; };
+		B16613D01E590BC90041F8B4 /* DebtCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DebtCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16613D21E590BC90041F8B4 /* DebtCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebtCalcTests.m; sourceTree = "<group>"; };
+		B16613D41E590BC90041F8B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16613DB1E590CB40041F8B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B1B19EA717B3B0A9004409E9 /* DebtCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B19EAA17B3B0A9004409E9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		B1B19EAD17B3B0A9004409E9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		B1B19EAE17B3B0A9004409E9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		B1B19EAF17B3B0A9004409E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1B19EB217B3B0A9004409E9 /* DebtCalc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DebtCalc-Info.plist"; sourceTree = "<group>"; };
 		B1B19EB417B3B0A9004409E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1B19EB617B3B0A9004409E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,18 +52,18 @@
 		B1B19EC017B3B0A9004409E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B1B19EC717B3B0C3004409E9 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		B1B19EC817B3B0C3004409E9 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
-		B1B19ECF17B3B291004409E9 /* CalculatorTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1B19ED017B3B291004409E9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B1B19ED517B3B291004409E9 /* CalculatorTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTest-Info.plist"; sourceTree = "<group>"; };
-		B1B19ED717B3B291004409E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B1B19ED917B3B291004409E9 /* CalculatorTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorTest.h; sourceTree = "<group>"; };
-		B1B19EDA17B3B291004409E9 /* CalculatorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTest.m; sourceTree = "<group>"; };
-		B1B19EDC17B3B291004409E9 /* CalculatorTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalculatorTest-Prefix.pch"; sourceTree = "<group>"; };
 		B1B19EE217B420A0004409E9 /* Payment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
 		B1B19EE317B420A0004409E9 /* Payment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Payment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B16613CD1E590BC90041F8B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1B19EA417B3B0A9004409E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,24 +72,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1B19ECB17B3B291004409E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1B19ED117B3B291004409E9 /* SenTestingKit.framework in Frameworks */,
-				B1B19ED217B3B291004409E9 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B16613D11E590BC90041F8B4 /* DebtCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				B16613D21E590BC90041F8B4 /* DebtCalcTests.m */,
+				B16613D41E590BC90041F8B4 /* Info.plist */,
+			);
+			path = DebtCalcTests;
+			sourceTree = "<group>";
+		};
 		B1B19E9E17B3B0A9004409E9 = {
 			isa = PBXGroup;
 			children = (
-				B14E1C7C192CA1920020D908 /* icon.iconset */,
 				B1B19EB017B3B0A9004409E9 /* DebtCalc */,
-				B1B19ED317B3B291004409E9 /* CalculatorTest */,
+				B16613D11E590BC90041F8B4 /* DebtCalcTests */,
 				B1B19EA917B3B0A9004409E9 /* Frameworks */,
 				B1B19EA817B3B0A9004409E9 /* Products */,
 			);
@@ -94,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B1B19EA717B3B0A9004409E9 /* DebtCalc.app */,
-				B1B19ECF17B3B291004409E9 /* CalculatorTest.octest */,
+				B16613D01E590BC90041F8B4 /* DebtCalcTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,20 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				B1B19EAA17B3B0A9004409E9 /* Cocoa.framework */,
-				B1B19ED017B3B291004409E9 /* SenTestingKit.framework */,
-				B1B19EAC17B3B0A9004409E9 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B1B19EAC17B3B0A9004409E9 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B1B19EAD17B3B0A9004409E9 /* AppKit.framework */,
-				B1B19EAE17B3B0A9004409E9 /* CoreData.framework */,
-				B1B19EAF17B3B0A9004409E9 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		B1B19EB017B3B0A9004409E9 /* DebtCalc */ = {
@@ -133,6 +125,7 @@
 				B14E1C78192C75570020D908 /* WindowController.m */,
 				B14E1C79192C75570020D908 /* Window.xib */,
 				B1B19EBF17B3B0A9004409E9 /* MainMenu.xib */,
+				B16613DB1E590CB40041F8B4 /* Images.xcassets */,
 				B1B19EB117B3B0A9004409E9 /* Supporting Files */,
 			);
 			path = DebtCalc;
@@ -150,29 +143,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B1B19ED317B3B291004409E9 /* CalculatorTest */ = {
-			isa = PBXGroup;
-			children = (
-				B1B19ED917B3B291004409E9 /* CalculatorTest.h */,
-				B1B19EDA17B3B291004409E9 /* CalculatorTest.m */,
-				B1B19ED417B3B291004409E9 /* Supporting Files */,
-			);
-			path = CalculatorTest;
-			sourceTree = "<group>";
-		};
-		B1B19ED417B3B291004409E9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B1B19ED517B3B291004409E9 /* CalculatorTest-Info.plist */,
-				B1B19ED617B3B291004409E9 /* InfoPlist.strings */,
-				B1B19EDC17B3B291004409E9 /* CalculatorTest-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B16613CF1E590BC90041F8B4 /* DebtCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16613D71E590BC90041F8B4 /* Build configuration list for PBXNativeTarget "DebtCalcTests" */;
+			buildPhases = (
+				B16613CC1E590BC90041F8B4 /* Sources */,
+				B16613CD1E590BC90041F8B4 /* Frameworks */,
+				B16613CE1E590BC90041F8B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B16613D61E590BC90041F8B4 /* PBXTargetDependency */,
+			);
+			name = DebtCalcTests;
+			productName = DebtCalcTests;
+			productReference = B16613D01E590BC90041F8B4 /* DebtCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B1B19EA617B3B0A9004409E9 /* DebtCalc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1B19EC417B3B0A9004409E9 /* Build configuration list for PBXNativeTarget "DebtCalc" */;
@@ -190,34 +181,23 @@
 			productReference = B1B19EA717B3B0A9004409E9 /* DebtCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B1B19ECE17B3B291004409E9 /* CalculatorTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1B19EDD17B3B291004409E9 /* Build configuration list for PBXNativeTarget "CalculatorTest" */;
-			buildPhases = (
-				B1B19ECA17B3B291004409E9 /* Sources */,
-				B1B19ECB17B3B291004409E9 /* Frameworks */,
-				B1B19ECC17B3B291004409E9 /* Resources */,
-				B1B19ECD17B3B291004409E9 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CalculatorTest;
-			productName = CalculatorTest;
-			productReference = B1B19ECF17B3B291004409E9 /* CalculatorTest.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B1B19E9F17B3B0A9004409E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = tagtaxa;
 				TargetAttributes = {
+					B16613CF1E590BC90041F8B4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WN8B3R544B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B1B19EA617B3B0A9004409E9;
+					};
 					B1B19EA617B3B0A9004409E9 = {
 						DevelopmentTeam = WN8B3R544B;
 						SystemCapabilities = {
@@ -241,51 +221,42 @@
 			projectRoot = "";
 			targets = (
 				B1B19EA617B3B0A9004409E9 /* DebtCalc */,
-				B1B19ECE17B3B291004409E9 /* CalculatorTest */,
+				B16613CF1E590BC90041F8B4 /* DebtCalcTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B16613CE1E590BC90041F8B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1B19EA517B3B0A9004409E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B1B19EB517B3B0A9004409E9 /* InfoPlist.strings in Resources */,
-				B14E1C7D192CA1920020D908 /* icon.iconset in Resources */,
 				B14E1C7B192C75570020D908 /* Window.xib in Resources */,
+				B16613DC1E590CB40041F8B4 /* Images.xcassets in Resources */,
 				B1B19EBB17B3B0A9004409E9 /* Credits.rtf in Resources */,
 				B1B19EC117B3B0A9004409E9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1B19ECC17B3B291004409E9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1B19ED817B3B291004409E9 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B1B19ECD17B3B291004409E9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		B16613CC1E590BC90041F8B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				B16613D31E590BC90041F8B4 /* DebtCalcTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		B1B19EA317B3B0A9004409E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,17 +269,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1B19ECA17B3B291004409E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1B19EDB17B3B291004409E9 /* CalculatorTest.m in Sources */,
-				B1B19EE017B3B2C6004409E9 /* Calculator.m in Sources */,
-				B1B19EE517B42467004409E9 /* Payment.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B16613D61E590BC90041F8B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1B19EA617B3B0A9004409E9 /* DebtCalc */;
+			targetProxy = B16613D51E590BC90041F8B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B1B19EB317B3B0A9004409E9 /* InfoPlist.strings */ = {
@@ -335,17 +304,60 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		B1B19ED617B3B291004409E9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1B19ED717B3B291004409E9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B16613D81E590BC90041F8B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = WN8B3R544B;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = DebtCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtaxa.DebtCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DebtCalc.app/Contents/MacOS/DebtCalc";
+			};
+			name = Debug;
+		};
+		B16613D91E590BC90041F8B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = WN8B3R544B;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = DebtCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtaxa.DebtCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DebtCalc.app/Contents/MacOS/DebtCalc";
+			};
+			name = Release;
+		};
 		B1B19EC217B3B0A9004409E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,15 +365,22 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -370,7 +389,9 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
@@ -385,18 +406,26 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
@@ -406,11 +435,13 @@
 		B1B19EC517B3B0A9004409E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Sinisa Drpa (WN8B3R544B)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DebtCalc/DebtCalc-Prefix.pch";
 				INFOPLIST_FILE = "DebtCalc/DebtCalc-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tagtaxa.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -419,45 +450,29 @@
 		B1B19EC617B3B0A9004409E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Sinisa Drpa (WN8B3R544B)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DebtCalc/DebtCalc-Prefix.pch";
 				INFOPLIST_FILE = "DebtCalc/DebtCalc-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tagtaxa.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		B1B19EDE17B3B291004409E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CalculatorTest/CalculatorTest-Prefix.pch";
-				INFOPLIST_FILE = "CalculatorTest/CalculatorTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		B1B19EDF17B3B291004409E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CalculatorTest/CalculatorTest-Prefix.pch";
-				INFOPLIST_FILE = "CalculatorTest/CalculatorTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B16613D71E590BC90041F8B4 /* Build configuration list for PBXNativeTarget "DebtCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16613D81E590BC90041F8B4 /* Debug */,
+				B16613D91E590BC90041F8B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B1B19EA217B3B0A9004409E9 /* Build configuration list for PBXProject "DebtCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -472,15 +487,6 @@
 			buildConfigurations = (
 				B1B19EC517B3B0A9004409E9 /* Debug */,
 				B1B19EC617B3B0A9004409E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1B19EDD17B3B291004409E9 /* Build configuration list for PBXNativeTarget "CalculatorTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1B19EDE17B3B291004409E9 /* Debug */,
-				B1B19EDF17B3B291004409E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,7 +3,7 @@
 
 @interface Payment : NSObject
 
-@property (assign) int order;
+@property (assign) NSUInteger order;
 @property (strong) NSDate *date;
 @property (assign) double annuity;
 @property (assign) double interest;
